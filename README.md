@@ -2,7 +2,7 @@
 
 A production-ready LangChain agent powered by OpenAI that combines greeting and weather functionality. Deployable with Lima, Docker, or Podman. Includes Streamlit test UI.
 
-## 🚀 Quick Start
+## 🚀 Quick Start Guide
 
 ```bash
 # 1. Copy environment template and edit
