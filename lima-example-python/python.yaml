@@ -1,0 +1,14 @@
+# Example Lima config for running Python in a VM
+images:
+  - location: "https://cloud-images.ubuntu.com/focal/current/focal-server-cloudimg-amd64.img"
+    arch: "x86_64"
+mounts:
+  - location: "/Users"
+    writable: true
+provision:
+  - mode: system
+    script: |
+      apt-get update
+      apt-get install -y python3 python3-pip
+      pip3 install --upgrade pip
+portForwards: []
