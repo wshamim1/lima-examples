@@ -1,0 +1,26 @@
+# LangChain Greeter + Weather Agent Requirements
+
+# LangChain Core
+langchain
+langchain-core>=0.1.0
+langchain-community>=0.0.20
+
+# LangChain Provider Integrations
+langchain-openai>=0.0.5
+langchain-anthropic>=0.1.0
+langchain-google-genai>=0.0.6
+
+# Web Framework
+flask==3.0.0
+flask-cors==4.0.0
+gunicorn==21.2.0
+
+# Environment management
+python-dotenv==1.0.0
+
+# Utilities
+requests==2.31.0
+# Streamlit Test App Requirements
+
+streamlit>=1.31.0
+requests>=2.31.0

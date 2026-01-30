@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Submit Data</title>
+</head>
+<body>
+    <h1>Submit Your Info</h1>
+    <div style="display: flex;">
+        <div style="flex: 1;">
+            <form method="POST" action="/submit">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div style="flex: 1; margin-left: 40px;">
+            <form method="GET" action="/fetch" style="margin-bottom: 20px;">
+                <button type="submit">Fetch All Data</button>
+            </form>
+            {% if users %}
+                <h2>All Users</h2>
+                <table border="1" cellpadding="8" style="border-collapse: collapse; width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for user in users %}
+                        <tr>
+                            <td>{{ user[0] }}</td>
+                            <td>{{ user[1] }}</td>
+                            <td>{{ user[2] }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
