@@ -1,4 +1,4 @@
-# LangChain Greeter + Weather Agent (Lima Example)
+# LangChain Greeter + Weather Agent & Build/Deploy Flask App (Lima Example)
 
 A production-ready LangChain agent powered by OpenAI that combines greeting and weather functionality. Deployable with Lima, Docker, or Podman. Includes Streamlit test UI.
 
