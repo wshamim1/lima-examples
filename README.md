@@ -27,6 +27,7 @@ cd deploy-lanchain-agent
 - Modular tools and agent logic
 
 
+
 ## Project Structure
 
 ```
@@ -40,19 +41,31 @@ build-deploy-flask-app/
   docker-compose.yml
   README.md
 deploy-lanchain-agent/
-  app.py
-  greeter_tools.py
-  greeter_weather_agent.py
-  weather_tools.py
-  streamlit_app.py
-  requirements.txt
-  Dockerfile
-  deploy_lima.sh
-  deploy_podman.sh
-  run_streamlit.sh
-  .env.example
+  ...
+lima-example-apache/
+  apache.yaml
   README.md
+lima-example-python/
+  python.yaml
+  hello.py
+  requirements.txt
+  README.md
+limactl-commands/
+  limactl-commands.md
+  readme.md
 ```
+
+---
+
+# Lima Example Use Cases
+
+This repository also demonstrates how to use [Lima](https://lima-vm.io/) to run Linux VMs for various development and container scenarios on macOS:
+
+- **lima-example-apache/**: Provision a VM with Apache HTTP Server, port-forwarded to your Mac.
+- **lima-example-python/**: Provision a VM with Python 3 and pip, run Python code and install dependencies.
+- **limactl-commands/**: Cheatsheets and YAML config examples for Lima, Docker, Podman, Kubernetes, and more.
+
+See each folder's README for details and usage instructions.
 
 ---
 
