@@ -1,6 +1,6 @@
 # Flask + MySQL with Docker Compose
 
-![Flask App Screenshot](flask-app.jpeg)
+![Flask App Screenshot](images/flask-app.jpeg)
 
 This project demonstrates a simple Flask web application with a MySQL backend, orchestrated using Docker Compose.
 
