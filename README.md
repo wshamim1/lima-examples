@@ -26,11 +26,19 @@ cd deploy-lanchain-agent
 - Streamlit UI for testing
 - Modular tools and agent logic
 
+
 ## Project Structure
 
 ```
 build-deploy-flask-app/
-  ...
+  flask_app/
+    app.py
+    requirements.txt
+    Dockerfile
+    templates/
+      form.html
+  docker-compose.yml
+  README.md
 deploy-lanchain-agent/
   app.py
   greeter_tools.py
@@ -45,6 +53,30 @@ deploy-lanchain-agent/
   .env.example
   README.md
 ```
+
+---
+
+# About `build-deploy-flask-app`
+
+This directory contains a simple Flask web application with a MySQL backend, orchestrated using Docker Compose.
+
+**Features:**
+- Submit user data (name, email) via a web form
+- Store submissions in a MySQL database
+- Fetch and display all users in a table
+
+**How to Run:**
+1. Navigate to the directory:
+   ```sh
+   cd build-deploy-flask-app
+   ```
+2. Build and start the services:
+   ```sh
+   docker-compose up --build
+   ```
+3. Visit [http://localhost:5000](http://localhost:5000) in your browser.
+
+See `build-deploy-flask-app/README.md` for more details and environment variable configuration.
 
 ## Environment Setup
 
